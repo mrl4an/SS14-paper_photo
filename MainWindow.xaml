@@ -1,0 +1,17 @@
+﻿<Window x:Class="SS14_paper_photo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SS14_paper_photo"
+        mc:Ignorable="d"
+        Title="Фото на бумаге СС14" Height="450" Width="800">
+    <Grid Background="#FF312E2E">
+        <Button x:Name="choiceImage" Content="Выберите изображение" HorizontalAlignment="Left" Height="53" Margin="10,27,0,0" VerticalAlignment="Top" Width="153" Click="choiceImage_Click"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Height="299" Margin="0,125,0,0" VerticalAlignment="Top" Width="780">
+            <TextBox x:Name="ColorText" TextWrapping="Wrap" Text="" IsManipulationEnabled="True" Background="{x:Null}" Foreground="White"/>
+        </Border>
+        <Label x:Name="resultText" Content="Изображение не выбрано" HorizontalAlignment="Left" Height="53" Margin="187,27,0,0" VerticalAlignment="Top" Width="603" Foreground="#FFFFFDFD" FontSize="20"/>
+
+    </Grid>
+</Window>
